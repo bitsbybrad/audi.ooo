@@ -12,9 +12,11 @@
     "url": "git+https://github.com/bitsbybrad/audi.ooo.git"
   },
   "scripts": {
-    "changelog": "yarn lerna-changelog"
+    "changelog": "yarn lerna-changelog",
+    "dev": "yarn workspaces foreach run dev"
   },
   "devDependencies": {
+    "alex": "^9.1.0",
     "lerna": "^4.0.0",
     "lerna-changelog": "^1.0.1",
     "typescript": "^4.3.4"
