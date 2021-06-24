@@ -1,0 +1,23 @@
+{
+  "name": "@audio/monorepo",
+  "workspaces": [
+    "packages/*",
+    "toolchain/*",
+    "website"
+  ],
+  "private": true,
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitsbybrad/audi.ooo.git"
+  },
+  "scripts" :{
+    // TODO: add github-pat-auth: https://github.com/lerna/lerna-changelog 
+    "changelog": "yarn lerna-changelog"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "lerna-changelog": "^1.0.1",
+    "typescript": "^4.3.4"
+  }
+}
